@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <CxHeader />
+    <CxHero />
+    <CxServices />
+    <CxAbout />
+    <CxTestimonials />
+    <CxContactForm />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CxHeader from "./components/CxHeader.vue";
+import CxHero from "./components/CxHero.vue";
+import CxServices from "./components/CxServices.vue";
+import CxAbout from "./components/CxAbout.vue";
+import CxTestimonials from "./components/CxTestimonials.vue";
+import CxContactForm from "./components/CxContactForm.vue";
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    CxHeader,
+    CxHero,
+    CxServices,
+    CxAbout,
+    CxTestimonials,
+    CxContactForm,
+  },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
