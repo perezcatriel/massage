@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-base: #ebdebf;
+  --color-second: #c6a75c;
+  --color-accent: #7c5cc6;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-base);
+  color: var(--color-second);
+}
+
+h1,
+h2 {
+  color: var(--color-accent);
+}
